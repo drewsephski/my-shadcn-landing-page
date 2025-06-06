@@ -43,19 +43,6 @@ export const HeroSection = () => {
 
             <Button
               asChild
-              variant="secondary"
-              className="w-5/6 md:w-1/4 font-bold"
-            >
-              <Link
-                href="https://github.com/yourusername"
-                target="_blank"
-              >
-                My GitHub
-              </Link>
-            </Button>
-
-            <Button
-              asChild
               variant="default"
               className="w-5/6 md:w-1/4 font-bold"
             >
@@ -71,7 +58,7 @@ export const HeroSection = () => {
           <Image
             width={1200}
             height={1200}
-            className="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
+            className="w-full md:max-w-[1200px] mx-auto rounded-lg relative rounded-lg leading-none flex items-center border border-t-2 border-secondary  border-t-primary/30"
             src={
               theme === "light"
                 ? "/TitanBlog.png"

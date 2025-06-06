@@ -50,9 +50,7 @@ export default function Home() {
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
-
       <ProjectsSection />
-  
       <CommunitySection />
       <BentoGridSection />
       <TestimonialSection />

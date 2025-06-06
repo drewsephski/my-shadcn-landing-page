@@ -36,6 +36,10 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "/about",
+    label: "About",
+  },
+  {
     href: "#testimonials",
     label: "Testimonials",
   },
@@ -46,6 +50,10 @@ const routeList: RouteProps[] = [
   {
     href: "#faq",
     label: "FAQ",
+  },
+  {
+    href: "https://68413e9900956178445b657f--titan-blog.netlify.app/",
+    label: "TitanBlog",
   },
 ];
 
@@ -133,7 +141,7 @@ export const Navbar = () => {
               Features
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
+              <div className="grid w-full lg:w-[600px] grid-cols-2 gap-5 p-4">
                 <Image
                   src="https://avatars.githubusercontent.com/u/75042455?v=4"
                   alt="RadixLogo"
