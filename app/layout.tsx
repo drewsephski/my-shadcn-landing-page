@@ -4,11 +4,12 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/layout/theme-provider";
+import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
+  title: "Drew Sepeczi - Web Developer Portfolio",
+  description: "Showcasing the work and expertise of a passionate web developer.",
 };
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
 
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

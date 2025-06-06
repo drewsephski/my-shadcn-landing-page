@@ -15,6 +15,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 interface ReviewProps {
   image: string;
@@ -27,52 +28,45 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
-    comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
-    rating: 5.0,
+    name: "Alex Chen",
+    userName: "Lead Developer at InnovateCorp",
+    comment: "Drew's ability to tackle complex frontend challenges is truly impressive. He delivered clean, efficient code that significantly improved our application's performance.",
+    rating: 5,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
-    rating: 4.8,
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    rating: 4.9,
+    name: "Maria Rodriguez",
+    userName: "Project Manager at Global Solutions",
+    comment: "Working with Drew was a pleasure. His attention to detail and commitment to delivering high-quality solutions made our project a huge success. Highly recommend!",
+    rating: 5,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    rating: 5.0,
+    name: "David Lee",
+    userName: "CTO of TechStart",
+    comment: "Drew quickly grasped our backend architecture and contributed valuable insights, optimizing our API responses and database queries. A strong asset to any team.",
+    rating: 4,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
-    rating: 5.0,
+    name: "Sarah Kim",
+    userName: "UX Designer at Creative Agency",
+    comment: "Drew consistently translates design mockups into pixel-perfect, responsive web interfaces. His understanding of UI/UX principles is exceptional.",
+    rating: 5,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
+    name: "Tom Jackson",
+    userName: "Freelance Client",
+    comment: "Drew built my personal website, and I couldn't be happier with the result. He was professional, responsive, and delivered exactly what I envisioned.",
+    rating: 4,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Jessica White",
+    userName: "Colleague at WebDev Co.",
+    comment: "Drew is a highly collaborative and knowledgeable developer. He's always eager to learn new technologies and share his expertise with the team.",
+    rating: 5,
   },
 ];
 
@@ -80,13 +74,9 @@ export const TestimonialSection = () => {
   return (
     <section id="testimonials" className="container py-24 sm:py-32">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
-        </h2>
-
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
-        </h2>
+        <Badge variant="outline" className="w-fit">Endorsements</Badge>
+        <h2 className="text-3xl md:text-5xl font-bold text-center">What My Colleagues & Clients Say</h2>
+        <p className="max-w-[750px] text-center text-lg text-muted-foreground mt-4">Hear from those I&apos;ve worked with about my skills and contributions.</p>
       </div>
 
       <Carousel

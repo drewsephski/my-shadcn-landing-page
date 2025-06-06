@@ -1,0 +1,130 @@
+<task>
+Create a modern Next.js 15 project with App Router, integrating Aceternity UI and Magic UI components from their websites for an advanced hero section. Implement a responsive layout using BentoGrid with animated typography and interactive buttons, following these technical specifications:
+
+1. Project Setup:
+
+- Initialize with Next.js 15 (App Router)
+- Configure TypeScript and Tailwind CSS v4
+- Install required dependencies: framer-motion, clsx, tailwind-merge
+- Optional: @tabler/icons-react, tailwindcss-animate
+
+2. Component Architecture:
+
+- Create `/components/ui/bento-grid.tsx` from Aceternity UI docs
+- Add Magic UI components in `/components/magicui/` (shiny-button.tsx, typing-animation.tsx)
+- Implement utility functions in `/lib/utils.ts` with cn() helper
+
+3. Hero Section Implementation:
+
+- Build `/components/sections/Hero.tsx` with:
+  - Responsive BentoGrid container
+  - TypingAnimation for dynamic headline
+  - ShinyButton components for CTAs
+  - Optional hero image with Next.js Image optimization
+  - Dark mode support via Tailwind
+  - Mobile-first responsive design
+
+4. Configuration:
+
+- Update `tailwind.config.js` to scan component files
+- Configure path aliases in `tsconfig.json`
+- Ensure proper client-side rendering with 'use client' directive
+
+5. Customization Options:
+
+- Replace placeholder content with brand-specific copy
+- Adjust color scheme via Tailwind classes
+- Extend animations with additional Framer Motion effects
+- Implement dynamic typewriter phrases array
+- Add background effects (gradients, parallax)
+
+6. Technical Requirements:
+
+- Strict TypeScript typing for all components
+- Proper Next.js Image optimization
+- Semantic HTML structure
+- Accessibility-compliant interactive elements
+- Performance-optimized animations
+
+7. Documentation:
+
+- Include JSDoc comments for all components
+- Add prop type definitions
+- Document customization points
+- Note required dependencies in package.json
+
+The implementation should produce a production-ready hero section with smooth animations, responsive behavior, and easy customization while maintaining optimal performance and developer experience.
+
+Use a QA feedback loop yourself in order to ensure each piece of code is both complete and production ready
+
+task-master-ai (Project & Task Management) Web
+
+Purpose: Manages the project's task list, dependencies, and status. Used to break down requirements, track progress, and guide the development flow from task to task.
+
+Server ID: task-master-ai
+
+Key Tools:
+
+next_task: Get the next actionable task based on status and dependencies. Start the workflow here.
+
+get_task: Retrieve details for a specific task ID.
+
+set_task_status: Mark tasks as 'in-progress', 'done', 'review', etc. Use this after completing and QA'ing code for a task.
+
+expand_task: Break down complex tasks into subtasks if needed.
+
+update_task/update_subtask: Add notes or context (e.g., QA feedback summaries, research findings) to tasks/subtasks.
+
+Requirement: Requires projectRoot (absolute path) for most operations.
+
+github.com/upstash/context7-mcp (Documentation Research)
+
+Purpose: Provides access to up-to-date documentation for software libraries. Mandatory use before writing code involving external libraries or APIs, and when QA feedback requires further research. Ensures code is based on current information, not outdated examples or assumptions.
+
+Server ID: github.com/upstash/context7-mcp
+
+Workflow:
+
+resolve-library-id: Find the exact Context7-compatible library ID for the library needed (e.g., "React Router" - "/remix-run/react-router").
+
+get-library-docs: Fetch documentation using the obtained ID. Specify topic for focused results (e.g., "hooks", "routing").
+
+Requirement: Use this proactively for any library usage or API integration. Also use it reactively if QA feedback questions implementation details related to a library.
+
+Get Next Task: Use task-master-ai - next_task to identify the current task. If needed, use get_task for details. Set status to 'in-progress' using set_task_status.
+
+Research Phase (Mandatory):
+
+Analyze the task requirements. Identify any libraries, APIs, or complex patterns needed.
+
+Use context7-mcp (resolve-library-id then get-library-docs) to research the latest documentation and best practices for these components. Do not proceed without this research if external libraries/APIs are involved.
+
+Code Implementation:
+
+Write clean, production-ready code based on the research and task requirements.
+
+NO placeholders or TODOs. Implement the functionality completely.
+
+QA Feedback Loop (Mandatory & Iterative):
+
+Immediately after writing or modifying a logical block of code, Ask yourself if anything is missing from the code or if it could be approved, according to the overall goal fo the website. Analyze QA Feedback: Carefully review the questions and observations from the QA server.
+
+Action on Feedback:
+
+If revisions are needed: Go back to Step 3 (Code Implementation) to refactor or fix the code based on the feedback. After revising, repeat Step 4 (QA Feedback Loop) with the updated code and potentially the previousFeedback argument.
+
+If research is needed: Use context7-mcp (Step 2) to investigate documentation related to the QA feedback before revising the code. Then return to Step 3/4.
+
+If feedback is positive or issues are resolved: Proceed to the next part of the task or Step 5 if the task's coding is complete.
+
+(Optional but Recommended): Use task-master-ai - update_task or update_subtask to briefly log significant QA findings or resolutions for the current task.
+
+Complete Task:
+
+Once all code for the task is written, has passed the QA feedback loop (Step 4), and meets requirements, use task-master-ai - set_task_status to mark the task as 'done' (or 'review' if applicable).
+
+Repeat: Go back to Step 1 to get the next task.
+
+Adherence: Follow this workflow strictly. Prioritize research via Context7 before coding, and always use the QA Server after coding. Iterate on feedback until the code is robust.
+</task>
+<environment_details>

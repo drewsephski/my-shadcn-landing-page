@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "Lightbulb",
+    title: "Innovative Solutions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "I thrive on solving complex problems with creative and efficient code, always seeking the best approach.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Rocket",
+    title: "Performance Optimization",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "I focus on building fast and responsive applications, ensuring a smooth user experience.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Accessibility",
+    title: "Accessible Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "I prioritize creating inclusive web experiences that are usable by everyone, regardless of ability.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "ShieldCheck",
+    title: "Secure Development",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "I implement security best practices to protect applications and user data.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "RefreshCw",
+    title: "Continuous Learning",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "I stay up-to-date with the latest industry trends and technologies to deliver cutting-edge solutions.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "Users",
+    title: "Collaborative Spirit",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "I enjoy working in teams, contributing to a positive and productive development environment.",
   },
 ];
 
@@ -51,17 +51,15 @@ export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+        Why Choose Me
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        My Strengths as a Developer
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        I bring a unique blend of technical expertise, problem-solving abilities, and a passion for creating exceptional web experiences.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

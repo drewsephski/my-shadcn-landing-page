@@ -31,16 +31,13 @@ interface RouteProps {
 interface FeatureProps {
   title: string;
   description: string;
+  link: string; // Added link property
 }
 
 const routeList: RouteProps[] = [
   {
     href: "#testimonials",
     label: "Testimonials",
-  },
-  {
-    href: "#team",
-    label: "Team",
   },
   {
     href: "#contact",
@@ -56,16 +53,19 @@ const featureList: FeatureProps[] = [
   {
     title: "Showcase Your Value ",
     description: "Highlight how your product solves user problems.",
+    link: "/#testimonials",
   },
   {
     title: "Build Trust",
     description:
       "Leverages social proof elements to establish trust and credibility.",
+    link: "/#testimonials", // Added link
   },
   {
     title: "Capture Leads",
     description:
       "Make your lead capture form visually appealing and strategically.",
+    link: "/#contact", // Added link
   },
 ];
 
@@ -75,7 +75,7 @@ export const Navbar = () => {
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
         <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn
+        Drew Sepeczi
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -96,7 +96,7 @@ export const Navbar = () => {
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
                     <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Shadcn
+                    Drew Sepeczi
                   </Link>
                 </SheetTitle>
               </SheetHeader>
@@ -142,18 +142,19 @@ export const Navbar = () => {
                   height={600}
                 />
                 <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
+                  {featureList.map(({ title, description, link }) => ( // Destructure link
+                    <Link href={link} key={title}> {/* Wrapped li in Link */}
+                      <li
+                        className="rounded-md p-3 text-sm hover:bg-muted"
+                      >
+                        <p className="mb-1 font-semibold leading-none text-foreground">
+                          {title}
+                        </p>
+                        <p className="line-clamp-2 text-muted-foreground">
+                          {description}
+                        </p>
+                      </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
@@ -178,7 +179,7 @@ export const Navbar = () => {
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
             aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
+            href="https://github.com/drewsephski/shadcn-landing-page.git"
             target="_blank"
           >
             <Github className="size-5" />

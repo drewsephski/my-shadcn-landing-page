@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "Code",
+    title: "Frontend Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Proficient in React, Next.js, and modern JavaScript/TypeScript frameworks to build interactive user interfaces.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: "Server",
+    title: "Backend Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Experienced with Node.js, Express, and database management (MongoDB, PostgreSQL) for robust server-side applications.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "Palette",
+    title: "UI/UX Design Principles",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Strong understanding of UI/UX principles, ensuring intuitive and visually appealing user experiences.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "GitBranch",
+    title: "Version Control & Deployment",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Skilled in Git for version control and deploying applications using various platforms.",
   },
 ];
 
@@ -40,15 +40,13 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Skills</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            My Expertise
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            I possess a diverse skill set in web development, allowing me to build robust and scalable applications.
           </p>
         </div>
 
